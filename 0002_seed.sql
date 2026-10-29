@@ -1,0 +1,1461 @@
+-- Seed the editable site content from content/site.json (current live copy).
+insert into public.site_content (id, draft, live, published_at, updated_by)
+values ('site', $json${
+  "version": 1,
+  "global": {
+    "announcement": "Building useful technology. Creating shared progress.",
+    "email": "hello@chizeon.com",
+    "footerLine": "Technology that moves life forward."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "An African technology company with a global outlook",
+      "headline1": "Technology should",
+      "headline2": "move <em>everyone</em> forward.",
+      "lead": "We build intelligent, accessible solutions that make everyday life simpler — and create opportunities that reach far beyond borders."
+    },
+    "slides": [
+      {
+        "venture": "rezovex",
+        "image": "rezovex",
+        "alt": "Rezovex"
+      },
+      {
+        "venture": "propverify",
+        "image": "propverify",
+        "alt": "PropVerify"
+      },
+      {
+        "venture": "mobility",
+        "image": "mobility",
+        "alt": "Mobility Platform"
+      },
+      {
+        "venture": "fuel-delivery",
+        "image": "fuel",
+        "alt": "Mobile Fuel Delivery"
+      }
+    ],
+    "about": {
+      "kicker": "Our story",
+      "heading1": "We are here to build",
+      "heading2": "what comes next.",
+      "sub": "We are not here to build walls between ideas.",
+      "statement": "At Chizeon Technologies, we believe technology reaches its highest purpose when it makes life better for people — not just a privileged few.",
+      "body1": "We are a technology company creating digital products, infrastructure and intelligent services for the real needs of everyday living. From financial access to verification, automation and future-facing services, our ambition is to turn complex challenges into experiences that feel simple, useful and human.",
+      "body2": "Our mission is bigger than a single product or market. We want to help shape a future where world-class technology is created, adopted and scaled from Nigeria and across Africa — with the quality, ambition and relevance to serve the world.",
+      "tagline": "One vision. Many possibilities."
+    },
+    "ventures": {
+      "kicker": "Our product portfolio",
+      "heading": "One company. Many ways forward.",
+      "intro": "Chizeon is building a growing family of technology ventures. Each product has a distinct purpose, united by one belief: everyday challenges deserve smarter solutions.",
+      "note": "Our portfolio will continue to evolve. Product descriptions and statuses reflect current direction and may change as each venture progresses."
+    },
+    "capabilities": {
+      "kicker": "What we do",
+      "heading": "Technology that connects ideas to outcomes.",
+      "intro": "Our capabilities span the product journey, from identifying a problem to designing, building and improving a digital solution."
+    },
+    "founderSection": {
+      "kicker": "Leadership",
+      "heading": "Guided by a builder's mindset."
+    },
+    "contactBox": {
+      "heading": "Let’s make the future more accessible, together.",
+      "text": "We welcome conversations with investors, strategic partners, technology providers and people who believe in the power of useful innovation."
+    },
+    "founder": {
+      "kicker": "A note from our founder",
+      "quote": "“The next era of technology must be one everyone can participate in.”",
+      "name": "Eze Rejoice Chidera",
+      "role": "Founder & Chief Executive Officer",
+      "initials": "EC",
+      "bio": "My passion for technology comes from a simple conviction: some of life’s hardest problems can become easier when we have the courage to think differently and the discipline to build solutions that work."
+    }
+  },
+  "capabilities": [
+    {
+      "icon": "code",
+      "highlight": false,
+      "title": "Software and Product Engineering",
+      "description": "Web applications, mobile-first experiences and digital tools shaped around real user needs.",
+      "bullets": [
+        "Web and mobile applications",
+        "Product design and prototyping",
+        "Ongoing improvement after launch"
+      ]
+    },
+    {
+      "icon": "layers",
+      "highlight": false,
+      "title": "Digital Infrastructure",
+      "description": "Connected workflows and dependable foundations that help products and teams operate more effectively.",
+      "bullets": [
+        "Cloud and hosting set-up",
+        "Integrations between systems",
+        "Monitoring and reliability"
+      ]
+    },
+    {
+      "icon": "flow",
+      "highlight": false,
+      "title": "Automation and Systems",
+      "description": "Practical ways to reduce repetitive work, improve visibility and make everyday processes easier.",
+      "bullets": [
+        "Workflow automation",
+        "Dashboards and reporting",
+        "Internal tools for teams"
+      ]
+    },
+    {
+      "icon": "coin",
+      "highlight": true,
+      "title": "Fintech Innovation",
+      "description": "Exploring accessible financial experiences, money tools and technology-led financial services.",
+      "bullets": [
+        "Wallets and payment flows",
+        "Cross-border money tools",
+        "Security and compliance by design"
+      ]
+    },
+    {
+      "icon": "verify",
+      "highlight": true,
+      "title": "Verification Technology",
+      "description": "Digital concepts that help people make more informed decisions through structured information.",
+      "bullets": [
+        "Document review workflows",
+        "Case tracking and reports",
+        "Structured data capture"
+      ]
+    },
+    {
+      "icon": "spark",
+      "highlight": true,
+      "title": "Venture Development",
+      "description": "Developing, testing and refining product ideas with a focus on usefulness, trust and sustainable growth.",
+      "bullets": [
+        "Idea testing and validation",
+        "Building early versions",
+        "Preparing ventures to grow"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "title": "Discover",
+      "description": "Understand the problem, the people and the goal."
+    },
+    {
+      "title": "Design",
+      "description": "Shape the experience and the structure before building."
+    },
+    {
+      "title": "Build",
+      "description": "Develop in stages, with working versions along the way."
+    },
+    {
+      "title": "Launch",
+      "description": "Release carefully and watch how people use it."
+    },
+    {
+      "title": "Improve",
+      "description": "Learn from real use and keep refining."
+    }
+  ],
+  "leadership": {
+    "hero": {
+      "heading": "A note from our <em>founder.</em>",
+      "lead": "The belief behind Chizeon."
+    },
+    "founder": {
+      "name": "Eze Rejoice Chidera",
+      "role": "Founder & CEO",
+      "initials": "EC",
+      "bio": "My passion for technology comes from a simple conviction: some of life’s hardest problems can become easier when we have the courage to think differently and the discipline to build solutions that work."
+    },
+    "principles": [
+      {
+        "icon": "spark",
+        "title": "Build with purpose",
+        "description": "Every product starts with a real problem and a clear reason to exist."
+      },
+      {
+        "icon": "lock",
+        "title": "Earn trust",
+        "description": "Clear communication, reliable delivery and honest status updates."
+      },
+      {
+        "icon": "flow",
+        "title": "Learn and improve",
+        "description": "Ship, listen and refine. Progress comes from steady iteration."
+      },
+      {
+        "icon": "trend",
+        "title": "Think long term",
+        "description": "A portfolio mindset that builds foundations rather than quick wins."
+      }
+    ],
+    "belief": {
+      "heading": "The future is not a race to outdo one another.",
+      "statement": "It is an opportunity to build together."
+    }
+  },
+  "contact": {
+    "heading": "Have a problem worth solving?",
+    "intro": "Connect with Chizeon Technologies about partnerships, product ideas and collaboration."
+  },
+  "ventures": [
+    {
+      "slug": "rezovex",
+      "name": "Rezovex",
+      "icon": "chart",
+      "pill": "gold",
+      "status": "Launching soon",
+      "scene": "rezovex",
+      "sub": "Connecting African capital to global financial opportunities",
+      "tagline": "Your Wealth. Without Borders.",
+      "summary": "Rezovex is a unified financial platform that bridges fragmented financial systems, enabling individuals and businesses to move, convert, manage, and deploy capital across currencies, markets, and asset classes through one seamless experience.",
+      "about": {
+        "paragraphs": [
+          "Rezovex simplifies the journey from local liquidity to global opportunity by bringing cross-border payments, multi-currency financial services, digital assets, and global investment access into one intelligent ecosystem.",
+          "Our mission is to eliminate the friction, fragmentation, and inefficiencies that prevent capital from moving freely and productively across borders.",
+          "Rezovex is building the infrastructure for a world where money is not constrained by geography, financial access is not limited by borders, and capital can work smarter, move faster, and reach further."
+        ],
+        "statement": "",
+        "closing": [
+          "One platform. Multiple markets. Limitless financial possibilities.",
+          "Rezovex — Making money globally mobile and financially productive."
+        ]
+      },
+      "hud": [
+        "Cross-border",
+        "Multi-currency",
+        "Global markets"
+      ],
+      "problem": {
+        "lead": "Fragmented financial systems keep capital from moving freely and productively across borders.",
+        "body": "Friction, fragmentation and inefficiency stand between local liquidity and global opportunity."
+      },
+      "approach": {
+        "lead": "One intelligent ecosystem that brings cross-border payments, multi-currency financial services, digital assets and global investment access together.",
+        "body": "A single, seamless experience from local liquidity to global opportunity."
+      },
+      "features": [
+        {
+          "icon": "globe",
+          "title": "Cross-border payments",
+          "description": "Move money across borders through one seamless experience."
+        },
+        {
+          "icon": "wallet",
+          "title": "Multi-currency financial services",
+          "description": "Convert, hold and manage capital across currencies."
+        },
+        {
+          "icon": "coin",
+          "title": "Digital assets",
+          "description": "Access digital assets within the same connected platform."
+        },
+        {
+          "icon": "trend",
+          "title": "Global investment access",
+          "description": "Deploy capital into global markets and asset classes."
+        },
+        {
+          "icon": "swap",
+          "title": "Conversion and liquidity",
+          "description": "Turn local liquidity into global opportunity."
+        },
+        {
+          "icon": "lock",
+          "title": "Security and compliance",
+          "description": "Identity verification, encryption and account protection by design."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Apps people use",
+          "items": [
+            "Mobile app",
+            "Web app",
+            "Business dashboard"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Shared services",
+          "items": [
+            "API gateway",
+            "Identity and access",
+            "Rates and charts service"
+          ]
+        },
+        {
+          "label": "Core",
+          "sub": "Money engine",
+          "items": [
+            "Wallet ledger",
+            "Payments engine",
+            "Compliance and KYC"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Connected networks",
+          "items": [
+            "Banks and payment rails",
+            "FX liquidity providers",
+            "Investment and asset partners"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Sign up and verify",
+          "description": "Create an account and complete identity checks."
+        },
+        {
+          "title": "Fund your wallet",
+          "description": "Add money from a supported source."
+        },
+        {
+          "title": "Convert",
+          "description": "Pick a currency pair and see the rate and fee first."
+        },
+        {
+          "title": "Move or invest",
+          "description": "Send abroad or deploy capital into global opportunities."
+        },
+        {
+          "title": "Track and grow",
+          "description": "Follow every transfer and position in one place."
+        }
+      ],
+      "note": "Rezovex is launching soon. Features may change before launch, and any regulated financial service depends on the required approvals and partners.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "Rezovex | Chizeon Technologies Ltd",
+        "description": "Rezovex is a unified financial platform that bridges fragmented financial systems, enabling individuals and businesses to move, convert, manage, and deploy capital across currencies, markets, and asset classes through one seamless experience."
+      }
+    },
+    {
+      "slug": "propverify",
+      "name": "PropVerify",
+      "icon": "shield-home",
+      "pill": "dev",
+      "status": "In development",
+      "scene": "propverify",
+      "sub": "Property technology",
+      "tagline": "Know the land and the paperwork before you commit.",
+      "summary": "A property verification concept designed to help people make more informed real-estate decisions with greater confidence and clarity.",
+      "hud": [
+        "Land check",
+        "Document review",
+        "Build progress"
+      ],
+      "problem": {
+        "lead": "Buying land or property often means piecing together documents, claims and site details from many sources, which makes it hard to know what to trust.",
+        "body": "One verification file per property with a clear status for every check."
+      },
+      "approach": {
+        "lead": "A guided process where documents are submitted, reviewed and organised into a verification report, so a buyer can see what has been checked and what is still open.",
+        "body": "Verification reports are informational and are not legal advice."
+      },
+      "features": [
+        {
+          "icon": "doc",
+          "title": "Document checks",
+          "description": "Submit titles, survey plans and receipts for structured review."
+        },
+        {
+          "icon": "search",
+          "title": "Ownership history review",
+          "description": "Look at how a property has changed hands, where records exist."
+        },
+        {
+          "icon": "map",
+          "title": "Site and boundary mapping",
+          "description": "Mark plot boundaries and request a site visit."
+        },
+        {
+          "icon": "verify",
+          "title": "Verification report",
+          "description": "Receive a report that lists each check and its status."
+        },
+        {
+          "icon": "users",
+          "title": "Seller and agent profiles",
+          "description": "See who you are dealing with and what has been confirmed."
+        },
+        {
+          "icon": "bell",
+          "title": "Progress updates",
+          "description": "Get notified as each step of a case moves forward."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Portals",
+          "items": [
+            "Buyer portal",
+            "Seller and agent portal",
+            "Verifier console"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Case handling",
+          "items": [
+            "Case management",
+            "Secure document vault",
+            "Notifications"
+          ]
+        },
+        {
+          "label": "Verification",
+          "sub": "Checks",
+          "items": [
+            "Document review workflow",
+            "Registry lookups",
+            "Boundary and site mapping",
+            "Report generator"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Professionals",
+          "items": [
+            "Land registries",
+            "Surveyors",
+            "Legal professionals"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Submit details",
+          "description": "Enter the property address, plot details and parties."
+        },
+        {
+          "title": "Upload documents",
+          "description": "Add titles, survey plans and receipts to the secure vault."
+        },
+        {
+          "title": "Review and site check",
+          "description": "Documents are reviewed and a site check can be requested."
+        },
+        {
+          "title": "Get the report",
+          "description": "Receive a report listing each check and its result."
+        },
+        {
+          "title": "Decide with clarity",
+          "description": "Use the findings to decide your next step."
+        }
+      ],
+      "note": "PropVerify is in development. Details may change before launch. Verification reports are informational and are not legal advice.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "PropVerify | Chizeon Technologies Ltd",
+        "description": "A property verification concept designed to help people make more informed real-estate decisions with greater confidence and clarity."
+      }
+    },
+    {
+      "slug": "mobility",
+      "name": "Mobility Platform",
+      "icon": "car",
+      "pill": "concept",
+      "status": "In concept",
+      "scene": "mobility",
+      "sub": "Mobility &amp; connectivity",
+      "tagline": "A ride that finds you, with a driver who is already on the way.",
+      "summary": "Exploring smarter ways to connect people with movement, services and the places they need to reach.",
+      "hud": [
+        "Request",
+        "Match",
+        "Pick-up"
+      ],
+      "problem": {
+        "lead": "Finding a safe, reliable ride at short notice can mean long waits, unclear prices and little information about who is coming.",
+        "body": "Upfront fares, live tracking and clear driver details."
+      },
+      "approach": {
+        "lead": "A rider app and a driver app joined by real-time matching, so a request is answered by the nearest suitable driver and both sides can follow the trip.",
+        "body": "Safety and clarity come before speed."
+      },
+      "features": [
+        {
+          "icon": "pin",
+          "title": "Request a ride",
+          "description": "Set pick-up and destination and see the fare estimate first."
+        },
+        {
+          "icon": "users",
+          "title": "Driver matching",
+          "description": "Match requests with nearby available drivers."
+        },
+        {
+          "icon": "route",
+          "title": "Live trip tracking",
+          "description": "Follow the car on a map from pick-up to drop-off."
+        },
+        {
+          "icon": "lock",
+          "title": "Safety tools",
+          "description": "Driver details and trip sharing to keep people informed."
+        },
+        {
+          "icon": "card",
+          "title": "Flexible payment",
+          "description": "Support for the payment methods riders and drivers prefer."
+        },
+        {
+          "icon": "chart",
+          "title": "Driver earnings view",
+          "description": "A simple view of trips and earnings for drivers."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Apps",
+          "items": [
+            "Rider app",
+            "Driver app",
+            "Operations dashboard"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Real-time layer",
+          "items": [
+            "API gateway",
+            "Realtime location gateway",
+            "Notifications"
+          ]
+        },
+        {
+          "label": "Services",
+          "sub": "Trip engine",
+          "items": [
+            "Matching",
+            "Pricing",
+            "Trip management",
+            "Payments"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Data and networks",
+          "items": [
+            "Maps and routing",
+            "Payment providers",
+            "Driver identity checks"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Request",
+          "description": "Choose a destination and see the estimated fare."
+        },
+        {
+          "title": "Match",
+          "description": "The nearest suitable driver accepts the trip."
+        },
+        {
+          "title": "Pick-up",
+          "description": "Track the car as it arrives and confirm the driver."
+        },
+        {
+          "title": "Ride",
+          "description": "Follow the route and share the trip if you want."
+        },
+        {
+          "title": "Pay and rate",
+          "description": "Pay and leave feedback for the driver."
+        }
+      ],
+      "note": "The Mobility Platform is at concept stage and is not a live service. The features described show the intended direction and may change.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "Mobility Platform | Chizeon Technologies Ltd",
+        "description": "Exploring smarter ways to connect people with movement, services and the places they need to reach."
+      }
+    },
+    {
+      "slug": "fuel-delivery",
+      "name": "Mobile Fuel Delivery",
+      "icon": "fuel",
+      "pill": "concept",
+      "status": "In concept",
+      "scene": "fuel",
+      "sub": "On-demand services",
+      "tagline": "Fuel that comes to you, wherever the car is parked.",
+      "summary": "An emerging idea focused on making access to emergency fuel assistance more convenient through a technology-enabled service.",
+      "hud": [
+        "Order",
+        "Dispatch",
+        "Deliver"
+      ],
+      "problem": {
+        "lead": "Queuing at stations costs time, and fleets and busy drivers lose hours each week to refuelling stops.",
+        "body": "Order fuel to a location, on a schedule or on demand."
+      },
+      "approach": {
+        "lead": "A customer app and a dispatch system that sends a tanker to the vehicle, with the order, delivery and receipt recorded in one place.",
+        "body": "Safe handling and licensed operators are central to the concept."
+      },
+      "features": [
+        {
+          "icon": "pin",
+          "title": "Order to your location",
+          "description": "Share where the vehicle is and choose the fuel and amount."
+        },
+        {
+          "icon": "clock",
+          "title": "Scheduled refills",
+          "description": "Set regular deliveries so vehicles are ready when needed."
+        },
+        {
+          "icon": "truck",
+          "title": "Live delivery tracking",
+          "description": "Follow the tanker as it heads to the vehicle."
+        },
+        {
+          "icon": "users",
+          "title": "Fleet accounts",
+          "description": "Manage many vehicles and drivers under one account."
+        },
+        {
+          "icon": "lock",
+          "title": "Safety first",
+          "description": "Handling procedures and licensed operators come first."
+        },
+        {
+          "icon": "doc",
+          "title": "Digital receipts",
+          "description": "Every delivery recorded with quantity and cost."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Apps",
+          "items": [
+            "Customer app",
+            "Dispatcher console",
+            "Operator app"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Shared services",
+          "items": [
+            "API gateway",
+            "Live tracking",
+            "Notifications"
+          ]
+        },
+        {
+          "label": "Services",
+          "sub": "Delivery engine",
+          "items": [
+            "Order management",
+            "Dispatch and routing",
+            "Inventory and metering",
+            "Payments"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Supply",
+          "items": [
+            "Fuel suppliers",
+            "Licensed tanker operators",
+            "Payment providers"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Share location",
+          "description": "Pin where the vehicle is or add a saved address."
+        },
+        {
+          "title": "Choose fuel",
+          "description": "Pick the fuel type and amount, then confirm the price."
+        },
+        {
+          "title": "Dispatch",
+          "description": "A nearby tanker is assigned and starts to move."
+        },
+        {
+          "title": "Fuel up",
+          "description": "The vehicle is fuelled on site and measured."
+        },
+        {
+          "title": "Get the receipt",
+          "description": "A digital receipt is added to your account."
+        }
+      ],
+      "note": "Mobile Fuel Delivery is at concept stage and is not a live service. Delivery would depend on the required licences and safety approvals.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "Mobile Fuel Delivery | Chizeon Technologies Ltd",
+        "description": "An emerging idea focused on making access to emergency fuel assistance more convenient through a technology-enabled service."
+      }
+    }
+  ]
+}$json$::jsonb, $json${
+  "version": 1,
+  "global": {
+    "announcement": "Building useful technology. Creating shared progress.",
+    "email": "hello@chizeon.com",
+    "footerLine": "Technology that moves life forward."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "An African technology company with a global outlook",
+      "headline1": "Technology should",
+      "headline2": "move <em>everyone</em> forward.",
+      "lead": "We build intelligent, accessible solutions that make everyday life simpler — and create opportunities that reach far beyond borders."
+    },
+    "slides": [
+      {
+        "venture": "rezovex",
+        "image": "rezovex",
+        "alt": "Rezovex"
+      },
+      {
+        "venture": "propverify",
+        "image": "propverify",
+        "alt": "PropVerify"
+      },
+      {
+        "venture": "mobility",
+        "image": "mobility",
+        "alt": "Mobility Platform"
+      },
+      {
+        "venture": "fuel-delivery",
+        "image": "fuel",
+        "alt": "Mobile Fuel Delivery"
+      }
+    ],
+    "about": {
+      "kicker": "Our story",
+      "heading1": "We are here to build",
+      "heading2": "what comes next.",
+      "sub": "We are not here to build walls between ideas.",
+      "statement": "At Chizeon Technologies, we believe technology reaches its highest purpose when it makes life better for people — not just a privileged few.",
+      "body1": "We are a technology company creating digital products, infrastructure and intelligent services for the real needs of everyday living. From financial access to verification, automation and future-facing services, our ambition is to turn complex challenges into experiences that feel simple, useful and human.",
+      "body2": "Our mission is bigger than a single product or market. We want to help shape a future where world-class technology is created, adopted and scaled from Nigeria and across Africa — with the quality, ambition and relevance to serve the world.",
+      "tagline": "One vision. Many possibilities."
+    },
+    "ventures": {
+      "kicker": "Our product portfolio",
+      "heading": "One company. Many ways forward.",
+      "intro": "Chizeon is building a growing family of technology ventures. Each product has a distinct purpose, united by one belief: everyday challenges deserve smarter solutions.",
+      "note": "Our portfolio will continue to evolve. Product descriptions and statuses reflect current direction and may change as each venture progresses."
+    },
+    "capabilities": {
+      "kicker": "What we do",
+      "heading": "Technology that connects ideas to outcomes.",
+      "intro": "Our capabilities span the product journey, from identifying a problem to designing, building and improving a digital solution."
+    },
+    "founderSection": {
+      "kicker": "Leadership",
+      "heading": "Guided by a builder's mindset."
+    },
+    "contactBox": {
+      "heading": "Let’s make the future more accessible, together.",
+      "text": "We welcome conversations with investors, strategic partners, technology providers and people who believe in the power of useful innovation."
+    },
+    "founder": {
+      "kicker": "A note from our founder",
+      "quote": "“The next era of technology must be one everyone can participate in.”",
+      "name": "Eze Rejoice Chidera",
+      "role": "Founder & Chief Executive Officer",
+      "initials": "EC",
+      "bio": "My passion for technology comes from a simple conviction: some of life’s hardest problems can become easier when we have the courage to think differently and the discipline to build solutions that work."
+    }
+  },
+  "capabilities": [
+    {
+      "icon": "code",
+      "highlight": false,
+      "title": "Software and Product Engineering",
+      "description": "Web applications, mobile-first experiences and digital tools shaped around real user needs.",
+      "bullets": [
+        "Web and mobile applications",
+        "Product design and prototyping",
+        "Ongoing improvement after launch"
+      ]
+    },
+    {
+      "icon": "layers",
+      "highlight": false,
+      "title": "Digital Infrastructure",
+      "description": "Connected workflows and dependable foundations that help products and teams operate more effectively.",
+      "bullets": [
+        "Cloud and hosting set-up",
+        "Integrations between systems",
+        "Monitoring and reliability"
+      ]
+    },
+    {
+      "icon": "flow",
+      "highlight": false,
+      "title": "Automation and Systems",
+      "description": "Practical ways to reduce repetitive work, improve visibility and make everyday processes easier.",
+      "bullets": [
+        "Workflow automation",
+        "Dashboards and reporting",
+        "Internal tools for teams"
+      ]
+    },
+    {
+      "icon": "coin",
+      "highlight": true,
+      "title": "Fintech Innovation",
+      "description": "Exploring accessible financial experiences, money tools and technology-led financial services.",
+      "bullets": [
+        "Wallets and payment flows",
+        "Cross-border money tools",
+        "Security and compliance by design"
+      ]
+    },
+    {
+      "icon": "verify",
+      "highlight": true,
+      "title": "Verification Technology",
+      "description": "Digital concepts that help people make more informed decisions through structured information.",
+      "bullets": [
+        "Document review workflows",
+        "Case tracking and reports",
+        "Structured data capture"
+      ]
+    },
+    {
+      "icon": "spark",
+      "highlight": true,
+      "title": "Venture Development",
+      "description": "Developing, testing and refining product ideas with a focus on usefulness, trust and sustainable growth.",
+      "bullets": [
+        "Idea testing and validation",
+        "Building early versions",
+        "Preparing ventures to grow"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "title": "Discover",
+      "description": "Understand the problem, the people and the goal."
+    },
+    {
+      "title": "Design",
+      "description": "Shape the experience and the structure before building."
+    },
+    {
+      "title": "Build",
+      "description": "Develop in stages, with working versions along the way."
+    },
+    {
+      "title": "Launch",
+      "description": "Release carefully and watch how people use it."
+    },
+    {
+      "title": "Improve",
+      "description": "Learn from real use and keep refining."
+    }
+  ],
+  "leadership": {
+    "hero": {
+      "heading": "A note from our <em>founder.</em>",
+      "lead": "The belief behind Chizeon."
+    },
+    "founder": {
+      "name": "Eze Rejoice Chidera",
+      "role": "Founder & CEO",
+      "initials": "EC",
+      "bio": "My passion for technology comes from a simple conviction: some of life’s hardest problems can become easier when we have the courage to think differently and the discipline to build solutions that work."
+    },
+    "principles": [
+      {
+        "icon": "spark",
+        "title": "Build with purpose",
+        "description": "Every product starts with a real problem and a clear reason to exist."
+      },
+      {
+        "icon": "lock",
+        "title": "Earn trust",
+        "description": "Clear communication, reliable delivery and honest status updates."
+      },
+      {
+        "icon": "flow",
+        "title": "Learn and improve",
+        "description": "Ship, listen and refine. Progress comes from steady iteration."
+      },
+      {
+        "icon": "trend",
+        "title": "Think long term",
+        "description": "A portfolio mindset that builds foundations rather than quick wins."
+      }
+    ],
+    "belief": {
+      "heading": "The future is not a race to outdo one another.",
+      "statement": "It is an opportunity to build together."
+    }
+  },
+  "contact": {
+    "heading": "Have a problem worth solving?",
+    "intro": "Connect with Chizeon Technologies about partnerships, product ideas and collaboration."
+  },
+  "ventures": [
+    {
+      "slug": "rezovex",
+      "name": "Rezovex",
+      "icon": "chart",
+      "pill": "gold",
+      "status": "Launching soon",
+      "scene": "rezovex",
+      "sub": "Connecting African capital to global financial opportunities",
+      "tagline": "Your Wealth. Without Borders.",
+      "summary": "Rezovex is a unified financial platform that bridges fragmented financial systems, enabling individuals and businesses to move, convert, manage, and deploy capital across currencies, markets, and asset classes through one seamless experience.",
+      "about": {
+        "paragraphs": [
+          "Rezovex simplifies the journey from local liquidity to global opportunity by bringing cross-border payments, multi-currency financial services, digital assets, and global investment access into one intelligent ecosystem.",
+          "Our mission is to eliminate the friction, fragmentation, and inefficiencies that prevent capital from moving freely and productively across borders.",
+          "Rezovex is building the infrastructure for a world where money is not constrained by geography, financial access is not limited by borders, and capital can work smarter, move faster, and reach further."
+        ],
+        "statement": "",
+        "closing": [
+          "One platform. Multiple markets. Limitless financial possibilities.",
+          "Rezovex — Making money globally mobile and financially productive."
+        ]
+      },
+      "hud": [
+        "Cross-border",
+        "Multi-currency",
+        "Global markets"
+      ],
+      "problem": {
+        "lead": "Fragmented financial systems keep capital from moving freely and productively across borders.",
+        "body": "Friction, fragmentation and inefficiency stand between local liquidity and global opportunity."
+      },
+      "approach": {
+        "lead": "One intelligent ecosystem that brings cross-border payments, multi-currency financial services, digital assets and global investment access together.",
+        "body": "A single, seamless experience from local liquidity to global opportunity."
+      },
+      "features": [
+        {
+          "icon": "globe",
+          "title": "Cross-border payments",
+          "description": "Move money across borders through one seamless experience."
+        },
+        {
+          "icon": "wallet",
+          "title": "Multi-currency financial services",
+          "description": "Convert, hold and manage capital across currencies."
+        },
+        {
+          "icon": "coin",
+          "title": "Digital assets",
+          "description": "Access digital assets within the same connected platform."
+        },
+        {
+          "icon": "trend",
+          "title": "Global investment access",
+          "description": "Deploy capital into global markets and asset classes."
+        },
+        {
+          "icon": "swap",
+          "title": "Conversion and liquidity",
+          "description": "Turn local liquidity into global opportunity."
+        },
+        {
+          "icon": "lock",
+          "title": "Security and compliance",
+          "description": "Identity verification, encryption and account protection by design."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Apps people use",
+          "items": [
+            "Mobile app",
+            "Web app",
+            "Business dashboard"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Shared services",
+          "items": [
+            "API gateway",
+            "Identity and access",
+            "Rates and charts service"
+          ]
+        },
+        {
+          "label": "Core",
+          "sub": "Money engine",
+          "items": [
+            "Wallet ledger",
+            "Payments engine",
+            "Compliance and KYC"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Connected networks",
+          "items": [
+            "Banks and payment rails",
+            "FX liquidity providers",
+            "Investment and asset partners"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Sign up and verify",
+          "description": "Create an account and complete identity checks."
+        },
+        {
+          "title": "Fund your wallet",
+          "description": "Add money from a supported source."
+        },
+        {
+          "title": "Convert",
+          "description": "Pick a currency pair and see the rate and fee first."
+        },
+        {
+          "title": "Move or invest",
+          "description": "Send abroad or deploy capital into global opportunities."
+        },
+        {
+          "title": "Track and grow",
+          "description": "Follow every transfer and position in one place."
+        }
+      ],
+      "note": "Rezovex is launching soon. Features may change before launch, and any regulated financial service depends on the required approvals and partners.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "Rezovex | Chizeon Technologies Ltd",
+        "description": "Rezovex is a unified financial platform that bridges fragmented financial systems, enabling individuals and businesses to move, convert, manage, and deploy capital across currencies, markets, and asset classes through one seamless experience."
+      }
+    },
+    {
+      "slug": "propverify",
+      "name": "PropVerify",
+      "icon": "shield-home",
+      "pill": "dev",
+      "status": "In development",
+      "scene": "propverify",
+      "sub": "Property technology",
+      "tagline": "Know the land and the paperwork before you commit.",
+      "summary": "A property verification concept designed to help people make more informed real-estate decisions with greater confidence and clarity.",
+      "hud": [
+        "Land check",
+        "Document review",
+        "Build progress"
+      ],
+      "problem": {
+        "lead": "Buying land or property often means piecing together documents, claims and site details from many sources, which makes it hard to know what to trust.",
+        "body": "One verification file per property with a clear status for every check."
+      },
+      "approach": {
+        "lead": "A guided process where documents are submitted, reviewed and organised into a verification report, so a buyer can see what has been checked and what is still open.",
+        "body": "Verification reports are informational and are not legal advice."
+      },
+      "features": [
+        {
+          "icon": "doc",
+          "title": "Document checks",
+          "description": "Submit titles, survey plans and receipts for structured review."
+        },
+        {
+          "icon": "search",
+          "title": "Ownership history review",
+          "description": "Look at how a property has changed hands, where records exist."
+        },
+        {
+          "icon": "map",
+          "title": "Site and boundary mapping",
+          "description": "Mark plot boundaries and request a site visit."
+        },
+        {
+          "icon": "verify",
+          "title": "Verification report",
+          "description": "Receive a report that lists each check and its status."
+        },
+        {
+          "icon": "users",
+          "title": "Seller and agent profiles",
+          "description": "See who you are dealing with and what has been confirmed."
+        },
+        {
+          "icon": "bell",
+          "title": "Progress updates",
+          "description": "Get notified as each step of a case moves forward."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Portals",
+          "items": [
+            "Buyer portal",
+            "Seller and agent portal",
+            "Verifier console"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Case handling",
+          "items": [
+            "Case management",
+            "Secure document vault",
+            "Notifications"
+          ]
+        },
+        {
+          "label": "Verification",
+          "sub": "Checks",
+          "items": [
+            "Document review workflow",
+            "Registry lookups",
+            "Boundary and site mapping",
+            "Report generator"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Professionals",
+          "items": [
+            "Land registries",
+            "Surveyors",
+            "Legal professionals"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Submit details",
+          "description": "Enter the property address, plot details and parties."
+        },
+        {
+          "title": "Upload documents",
+          "description": "Add titles, survey plans and receipts to the secure vault."
+        },
+        {
+          "title": "Review and site check",
+          "description": "Documents are reviewed and a site check can be requested."
+        },
+        {
+          "title": "Get the report",
+          "description": "Receive a report listing each check and its result."
+        },
+        {
+          "title": "Decide with clarity",
+          "description": "Use the findings to decide your next step."
+        }
+      ],
+      "note": "PropVerify is in development. Details may change before launch. Verification reports are informational and are not legal advice.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "PropVerify | Chizeon Technologies Ltd",
+        "description": "A property verification concept designed to help people make more informed real-estate decisions with greater confidence and clarity."
+      }
+    },
+    {
+      "slug": "mobility",
+      "name": "Mobility Platform",
+      "icon": "car",
+      "pill": "concept",
+      "status": "In concept",
+      "scene": "mobility",
+      "sub": "Mobility &amp; connectivity",
+      "tagline": "A ride that finds you, with a driver who is already on the way.",
+      "summary": "Exploring smarter ways to connect people with movement, services and the places they need to reach.",
+      "hud": [
+        "Request",
+        "Match",
+        "Pick-up"
+      ],
+      "problem": {
+        "lead": "Finding a safe, reliable ride at short notice can mean long waits, unclear prices and little information about who is coming.",
+        "body": "Upfront fares, live tracking and clear driver details."
+      },
+      "approach": {
+        "lead": "A rider app and a driver app joined by real-time matching, so a request is answered by the nearest suitable driver and both sides can follow the trip.",
+        "body": "Safety and clarity come before speed."
+      },
+      "features": [
+        {
+          "icon": "pin",
+          "title": "Request a ride",
+          "description": "Set pick-up and destination and see the fare estimate first."
+        },
+        {
+          "icon": "users",
+          "title": "Driver matching",
+          "description": "Match requests with nearby available drivers."
+        },
+        {
+          "icon": "route",
+          "title": "Live trip tracking",
+          "description": "Follow the car on a map from pick-up to drop-off."
+        },
+        {
+          "icon": "lock",
+          "title": "Safety tools",
+          "description": "Driver details and trip sharing to keep people informed."
+        },
+        {
+          "icon": "card",
+          "title": "Flexible payment",
+          "description": "Support for the payment methods riders and drivers prefer."
+        },
+        {
+          "icon": "chart",
+          "title": "Driver earnings view",
+          "description": "A simple view of trips and earnings for drivers."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Apps",
+          "items": [
+            "Rider app",
+            "Driver app",
+            "Operations dashboard"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Real-time layer",
+          "items": [
+            "API gateway",
+            "Realtime location gateway",
+            "Notifications"
+          ]
+        },
+        {
+          "label": "Services",
+          "sub": "Trip engine",
+          "items": [
+            "Matching",
+            "Pricing",
+            "Trip management",
+            "Payments"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Data and networks",
+          "items": [
+            "Maps and routing",
+            "Payment providers",
+            "Driver identity checks"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Request",
+          "description": "Choose a destination and see the estimated fare."
+        },
+        {
+          "title": "Match",
+          "description": "The nearest suitable driver accepts the trip."
+        },
+        {
+          "title": "Pick-up",
+          "description": "Track the car as it arrives and confirm the driver."
+        },
+        {
+          "title": "Ride",
+          "description": "Follow the route and share the trip if you want."
+        },
+        {
+          "title": "Pay and rate",
+          "description": "Pay and leave feedback for the driver."
+        }
+      ],
+      "note": "The Mobility Platform is at concept stage and is not a live service. The features described show the intended direction and may change.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "Mobility Platform | Chizeon Technologies Ltd",
+        "description": "Exploring smarter ways to connect people with movement, services and the places they need to reach."
+      }
+    },
+    {
+      "slug": "fuel-delivery",
+      "name": "Mobile Fuel Delivery",
+      "icon": "fuel",
+      "pill": "concept",
+      "status": "In concept",
+      "scene": "fuel",
+      "sub": "On-demand services",
+      "tagline": "Fuel that comes to you, wherever the car is parked.",
+      "summary": "An emerging idea focused on making access to emergency fuel assistance more convenient through a technology-enabled service.",
+      "hud": [
+        "Order",
+        "Dispatch",
+        "Deliver"
+      ],
+      "problem": {
+        "lead": "Queuing at stations costs time, and fleets and busy drivers lose hours each week to refuelling stops.",
+        "body": "Order fuel to a location, on a schedule or on demand."
+      },
+      "approach": {
+        "lead": "A customer app and a dispatch system that sends a tanker to the vehicle, with the order, delivery and receipt recorded in one place.",
+        "body": "Safe handling and licensed operators are central to the concept."
+      },
+      "features": [
+        {
+          "icon": "pin",
+          "title": "Order to your location",
+          "description": "Share where the vehicle is and choose the fuel and amount."
+        },
+        {
+          "icon": "clock",
+          "title": "Scheduled refills",
+          "description": "Set regular deliveries so vehicles are ready when needed."
+        },
+        {
+          "icon": "truck",
+          "title": "Live delivery tracking",
+          "description": "Follow the tanker as it heads to the vehicle."
+        },
+        {
+          "icon": "users",
+          "title": "Fleet accounts",
+          "description": "Manage many vehicles and drivers under one account."
+        },
+        {
+          "icon": "lock",
+          "title": "Safety first",
+          "description": "Handling procedures and licensed operators come first."
+        },
+        {
+          "icon": "doc",
+          "title": "Digital receipts",
+          "description": "Every delivery recorded with quantity and cost."
+        }
+      ],
+      "arch": [
+        {
+          "label": "Experience",
+          "sub": "Apps",
+          "items": [
+            "Customer app",
+            "Dispatcher console",
+            "Operator app"
+          ]
+        },
+        {
+          "label": "Platform",
+          "sub": "Shared services",
+          "items": [
+            "API gateway",
+            "Live tracking",
+            "Notifications"
+          ]
+        },
+        {
+          "label": "Services",
+          "sub": "Delivery engine",
+          "items": [
+            "Order management",
+            "Dispatch and routing",
+            "Inventory and metering",
+            "Payments"
+          ]
+        },
+        {
+          "label": "Partners",
+          "sub": "Supply",
+          "items": [
+            "Fuel suppliers",
+            "Licensed tanker operators",
+            "Payment providers"
+          ]
+        }
+      ],
+      "journey": [
+        {
+          "title": "Share location",
+          "description": "Pin where the vehicle is or add a saved address."
+        },
+        {
+          "title": "Choose fuel",
+          "description": "Pick the fuel type and amount, then confirm the price."
+        },
+        {
+          "title": "Dispatch",
+          "description": "A nearby tanker is assigned and starts to move."
+        },
+        {
+          "title": "Fuel up",
+          "description": "The vehicle is fuelled on site and measured."
+        },
+        {
+          "title": "Get the receipt",
+          "description": "A digital receipt is added to your account."
+        }
+      ],
+      "note": "Mobile Fuel Delivery is at concept stage and is not a live service. Delivery would depend on the required licences and safety approvals.",
+      "store": {
+        "play": "",
+        "apple": "",
+        "website": ""
+      },
+      "seo": {
+        "title": "Mobile Fuel Delivery | Chizeon Technologies Ltd",
+        "description": "An emerging idea focused on making access to emergency fuel assistance more convenient through a technology-enabled service."
+      }
+    }
+  ]
+}$json$::jsonb, now(), 'seed')
+on conflict (id) do nothing;
+
+-- Make the first admin. Replace the email with the account you create in Supabase Auth.
+insert into public.admin_users (email) values ('REPLACE_WITH_ADMIN_EMAIL') on conflict do nothing;
