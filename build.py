@@ -141,12 +141,17 @@ def footer(root):
 </footer>
 <button class="to-top" id="toTop" type="button" aria-label="Back to top">{ic('up')}</button>'''
 
+_origin=os.environ.get('SITE_URL','').strip().rstrip('/')
+if not _origin and os.environ.get('VERCEL_PROJECT_PRODUCTION_URL','').strip():
+  _origin='https://'+os.environ['VERCEL_PROJECT_PRODUCTION_URL'].strip().rstrip('/')
+SHARE_IMG=(_origin+'/share-card.png') if _origin else 'share-card.png'
+
 def page(title,desc,body,scripts,index=False):
   d=html.escape(desc,quote=True); t=html.escape(title,quote=True)
   social=(f'<meta name="theme-color" content="#0a0a0b">\n<meta property="og:site_name" content="Chizeon Technologies Ltd">\n'
           f'<meta property="og:type" content="website">\n<meta property="og:title" content="{t}">\n<meta property="og:description" content="{d}">\n'
-          f'<meta property="og:image" content="share-card.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="Chizeon Technologies Ltd. Innovate. Develop. Deliver.">\n'
-          f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{t}">\n<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="share-card.png">\n'
+          f'<meta property="og:image" content="'+SHARE_IMG+'">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta property="og:image:alt" content="Chizeon Technologies Ltd. Innovate. Develop. Deliver.">\n'
+          f'<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="{t}">\n<meta name="twitter:description" content="{d}">\n<meta name="twitter:image" content="'+SHARE_IMG+'">\n'
           )
   head=CFG_JS+f'<title>{title}</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<meta name="description" content="{d}">\n{social}{FONTS}\n{STYLE}\n'
   if index:
@@ -526,5 +531,6 @@ def contact():
 out={'index.html':home(),'capabilities.html':capabilities(),'leadership.html':leadership(),'contact.html':contact()}
 for i,v in enumerate(VENTURES): out[v['slug']+'.html']=venture(i)
 os.makedirs(os.path.join(D,'dist'),exist_ok=True)
+open(os.path.join(D,'dist','share-card.png'),'wb').write(open(os.path.join(D,'share-card.png'),'rb').read())
 for n,c in out.items():
   open(os.path.join(D,'dist',n),'w').write(c); print(n,len(c))
